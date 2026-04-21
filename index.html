@@ -1,65 +1,143 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Dashboard E-Lapor</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .header {
-        background-color: #0056b3;
-        color: white;
-        padding: 15px;
-        text-align: center;
-      }
-      .sidebar {
-        width: 200px;
-        float: left;
-        background-color: #f4f4f4;
-        height: 500px;
-        padding: 15px;
-        box-sizing: border-box;
-      }
-      .content {
-        margin-left: 200px;
-        padding: 20px;
-        height: 500px;
-        box-sizing: border-box;
-      }
-      .footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px;
-        clear: both;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="header">
-      <h1>Sistem Pengaduan E-Lapor</h1>
-    </div>
+<head>
+  <title>Dashboard E-Lapor</title>
 
-    <div class="sidebar">
-      <h3>Menu Utama</h3>
-      <ul>
-        <li><a href="index.php">Dashboard</a></li>
-        <li><a href="#">Data Laporan</a></li>
-      </ul>
-    </div>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-    <div class="content">
-      <h2>Selamat Datang, Admin!</h2>
-      <p>
-        Halaman ini masih monolithic (menumpuk dalam 1 file). Kita akan
-        memecahnya menjadi komponen-komponen modular.
-      </p>
-    </div>
+    body{
+      font-family:Arial, sans-serif;
+      background:linear-gradient(to right,#dbeafe,#eff6ff);
+    }
 
-    <div class="footer">
-      <p>&copy; 2026 STMIK Palangkaraya - Kelompok X</p>
+    .header{
+      background:linear-gradient(to right,#0f172a,#1d4ed8);
+      color:white;
+      text-align:center;
+      padding:25px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .header h1{
+      font-size:32px;
+    }
+
+    .sidebar{
+      width:230px;
+      float:left;
+      background:linear-gradient(to bottom,#1e3a8a,#2563eb);
+      height:520px;
+      padding:20px;
+    }
+
+    .sidebar h3{
+      color:white;
+      margin-bottom:20px;
+      text-align:center;
+    }
+
+    .sidebar ul{
+      list-style:none;
+    }
+
+    .sidebar ul li{
+      margin-bottom:15px;
+    }
+
+    .sidebar ul li a{
+      display:block;
+      text-decoration:none;
+      background:white;
+      color:#1e3a8a;
+      padding:12px;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .sidebar ul li a:hover{
+      background:#facc15;
+      color:#000;
+      transform:translateX(5px);
+    }
+
+    .content{
+      margin-left:230px;
+      padding:30px;
+      min-height:520px;
+      background:white;
+    }
+
+    .content h2{
+      color:#1e3a8a;
+      margin-bottom:15px;
+    }
+
+    .content p{
+      font-size:18px;
+      color:#444;
+      line-height:1.7;
+    }
+
+    .card{
+      margin-top:25px;
+      background:linear-gradient(to right,#3b82f6,#60a5fa);
+      color:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 5px 12px rgba(0,0,0,0.15);
+    }
+
+    .footer{
+      clear:both;
+      background:#0f172a;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Sistem Pengaduan E-Lapor</h1>
+  </div>
+
+  <div class="sidebar">
+    <h3>Menu Utama</h3>
+
+    <ul>
+      <li><a href="index.php">Dashboard</a></li>
+      <li><a href="#">Data Laporan</a></li>
+      <li><a href="#">Masyarakat</a></li>
+      <li><a href="#">Petugas</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Selamat Datang, Admin!</h2>
+
+    <p>
+      Halaman dashboard sudah diperbarui dengan tampilan warna modern,
+      elegan, dan lebih menarik.
+    </p>
+
+    <div class="card">
+      <h3>Total Laporan Hari Ini: 25</h3>
+      <p>12 Diproses | 8 Selesai | 5 Menunggu</p>
     </div>
-  </body>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 STMIK Palangkaraya - Kelompok X</p>
+  </div>
+
+</body>
 </html>
